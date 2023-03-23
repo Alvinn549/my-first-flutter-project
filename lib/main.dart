@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -40,37 +42,25 @@ class _DetailScreenState extends State<DetailScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              /*
-            Container(
-              height: 300,
-              margin: const EdgeInsets.only(top: 15, bottom: 15),
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                      'assets/images/PantaiTelengRiaPacitanJawaTimur.jpg'),
-                  fit: BoxFit.cover,
-                  opacity: 100,
-                ),
-              ),
-              child: const Center(
-                child: Text(
-                  'Pantai Teleng Ria',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 30.0,
-                    fontWeight: FontWeight.bold,
+              Container(
+                height: 300,
+                margin: const EdgeInsets.only(top: 15, bottom: 15),
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage(
+                        'assets/images/PantaiTelengRiaPacitanJawaTimur.jpg'),
+                    fit: BoxFit.cover,
+                    opacity: 150,
+                    colorFilter:
+                        ColorFilter.mode(Colors.black, BlendMode.dstATop),
                   ),
                 ),
-              ),
-            ),
-            */
-              Container(
-                margin: const EdgeInsets.only(top: 20, bottom: 20),
                 child: const Center(
                   child: Text(
                     'Pantai Teleng Ria',
                     textAlign: TextAlign.center,
                     style: TextStyle(
+                      color: Colors.white,
                       fontSize: 40.0,
                       fontWeight: FontWeight.bold,
                     ),
